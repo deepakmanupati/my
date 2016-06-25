@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="portfolio">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <link rel="shortcut icon" href="images/Bsymbol">
+  <link rel="icon" href="images/Bsymbol" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/Bsymbol" type="image/x-icon" /> -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div>
+     <span class="my-name">
+      Balakrishna
+    </span>
+    <span class="navbar">
+      <ul class="nav navbar-nav" ng-controller="NavCtrl">      
+        <li ng-class="navClass('home')"><a href='#/home'>About ME</a></li>
+        <li ng-class="navClass('about')"><a href='#/about'>My Projects</a></li>
+        <li ng-class="navClass('contact')"><a href='#/contact'>Contact ME</a></li>
+      </ul>
+    </span>
+  </div>
+</header>
+<div ng-view class="about-me">
+
+</div>
+
+
+<a href="#" class="back-to-top">Back to Top</a>
+<footer>
+ <span class="copyright"> &copy Balakrishna</span>
+</footer>
+<a href="#" class="back-to-top">Back to Top</a>
+</body>
+<!--scripting tags-->
+<script>
+document.write('<base href="' + document.location + '" />');
+</script>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
+<script src="js/app.js"></script>
+<script src="js/scripts.js"></script>
+</html>
